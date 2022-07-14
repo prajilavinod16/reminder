@@ -18,6 +18,10 @@ export class DashboardComponent implements OnInit {
   constructor(private fb:FormBuilder,private router:Router,private ds:DataService) { }
 
   ngOnInit(): void {
+    if(!localStorage.getItem("currentUserid")){
+      alert("please login")
+      this.router.navigateByUrl("")
+    }
   }
   addEvent(){
     var date=this.eventForm.value.date
@@ -37,7 +41,12 @@ export class DashboardComponent implements OnInit {
       alert(result.error.message)
     })
    } 
- 
+ logout(){
+  localStorage.removeItem("currentUserid")
+  localStorage.removeItem("currentUsername")
+  localStorage.removeItem("token")
+  this.router.navigateByUrl("")
+ }
    
     
    }

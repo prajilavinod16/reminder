@@ -8,7 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AddEventComponent } from './add-event/add-event.component';
+
 import { ViewEventComponent } from './view-event/view-event.component';
 @NgModule({
   declarations: [
@@ -16,7 +16,6 @@ import { ViewEventComponent } from './view-event/view-event.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    AddEventComponent,
     ViewEventComponent
   ],
   imports: [
