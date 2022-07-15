@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+html,body{
+    background-image: url(../../reminderapp/src/assets/paper-3146952_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: center center;
+    height: 600px;
+
+}
+

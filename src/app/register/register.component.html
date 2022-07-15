@@ -2,10 +2,10 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4 regform">
+        <div class="col-4" ></div>
+        <div class="col-md-3 regform">
             <form [formGroup]="registerForm" (ngSubmit)="register()" action="" class="border bg-light">
-                <h1 class="text-center" style="color:rgb(229, 15, 58);"><strong>Register</strong></h1>
+                <h1 class="text-center" style="color:black;"><strong>Register</strong></h1>
 
                 <div class="mt-3 p-2">
                     <input type="text" formControlName="username" id="username" class="form-control" placeholder="Username">
@@ -26,7 +26,7 @@
 
 
                 <div class="mt-3 p-2">
-                    <button class="btn btn-success">Register</button>
+                    <button class="btn btn-secondary">Register</button>
                 </div>
 
                 <p style="color:rgb(0, 0, 0);align-items:baseline;">Already Registered? <a routerLink="">Login</a></p>
@@ -35,4 +35,4 @@
         </div>
        <div class="col-4"></div>
         </div>
-        </div> 
+     </div> 

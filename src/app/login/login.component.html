@@ -4,11 +4,11 @@
         <div class="row">
             <div class="col-4"></div>
             <div class="col-4 log1">
-                <form [formGroup]="loginForm" (ngSubmit)="login()" action="" class="border bg-light form_class">
-                    <h1 class="text-center" style="color:rgb(54, 12, 151);"><strong>Log In</strong></h1>
+                <form [formGroup]="loginForm" (ngSubmit)="login()" action="" class="border bg-black form_class" >
+                    <h1 class="text-center" style="color:rgb(99, 179, 240);"><strong>Log In</strong></h1>
                     <div class="mt-3 p-2">
                         <input type="text" formControlName="userid" id="userid" class="form-control"
-                            placeholder="UserId">
+                            placeholder="User Id">
                     </div>
                     <div *ngIf="this.loginForm.get('userid')?.touched&&this.loginForm.get('userid')?.errors"
                         style="color:red">Invalid userid</div>
@@ -18,16 +18,16 @@
                     </div>
                     <div *ngIf="this.loginForm.get('password')?.touched&&this.loginForm.get('password')?.errors"
                         style="color:red">Invalid password</div>
-                    <div class="mt-3 p-2">
-                        <button class="btn btn-success">Login</button>
+                    <div class="mt-4 p-2">
+                        <button class="btn btn-light">Login</button>
                     </div>
-
-                    <div >
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-google"></i></a>
+                    <div class="mt-3 p-2" >
+                        <p style="align-items: baseline; color: white;" >Login Via &nbsp;
+                        <a href=""><i class="bi bi-facebook"></i></a>&nbsp;
+                        <a href=""><i class="bi bi-twitter"></i></a>&nbsp;
+                        <a href=""><i class="bi bi-google"></i></a></p>
                     </div>
-                    <p style="color:rgb(0, 0, 0);align-items:baseline;">Not a user? <a
+                    <p style="color:white;align-items:baseline;">Not a user? <a
                             routerLink="register">Register</a></p>
 
                 </form>
@@ -36,3 +36,12 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+<!--  -->

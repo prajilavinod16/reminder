@@ -23,5 +23,5 @@ export class ViewEventComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }
