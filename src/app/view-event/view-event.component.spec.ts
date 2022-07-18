@@ -8,9 +8,9 @@ describe('ViewEventComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ViewEventComponent ]
+      declarations: [ViewEventComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ViewEventComponent);
     component = fixture.componentInstance;

@@ -1,35 +1,38 @@
-
 <div class="row">
 
-      <div>  <button class="btn btn-dark" routerLink="/dashboard" style="font-size: 20px;margin-left: 20px;margin-top: 10px;"> Back</button>
-      </div>
+    <div> <button class="btn btn-dark" routerLink="/dashboard"
+            style="font-size: 20px;margin-left: 20px;margin-top: 10px;"> Back</button>
+    </div>
     <div class="col-1"></div>
 
-    <div class="col-md-5 eve" ><table class="table table-hover table-bordered border-dark" style="background-color:whitesmoke;">
+    <div class="col-md-5 eve">
+        <table class="table table-hover table-bordered border-dark" style="background-color:whitesmoke;">
 
-        <thead>
-            <tr>
-                   
-                <th>Date</th>
-                <th>Events</th>
-                <th></th>
-                
-            </tr>
-      </thead>
-<tbody>
-            <tr *ngFor="let i of events">
-              
-            <td>{{i.date}}</td>
-                <td>{{i.event}}</td>
-               <td> 
-                    <button class="btn btn-outline-secondary delete-button">Delete</button>&nbsp;
+            <thead>
+                <tr>
+                    <th>Sl.No</th>
+                    <th>Date</th>
+                    <th>Events</th>
 
-                    <button class="btn btn-outline-primary update-button">update</button></td>
-               
-            </tr>
-      </tbody>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of events; let k = index;">
 
-    </table></div>
-    
+                    <th>{{k+1}}</th>
+                    <th>{{i.date}}</th>
+                    <th>{{i.event}}</th>
+                    
+                        <button class="btn btn-outline-secondary delete-button" (click)="removeEvent(k)">Delete</button>&nbsp;
+
+                        <button class="btn btn-outline-primary update-button">edit</button>
+        
+
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
     <div class="col-4"></div>
 </div>

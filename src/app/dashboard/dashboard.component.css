@@ -1,8 +1,10 @@
-.log1{
-    margin-top: 10%;
-background-position: center center; 
+.log1 {
+    margin-top: 5%;
+    background-position: center center;
+    margin-left: 8%;
 }
-.log{
+
+.log {
     margin-top: 10px;
     margin-right: 30px;
 }

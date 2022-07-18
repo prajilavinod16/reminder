@@ -7,21 +7,39 @@ import { DataService } from 'src/data.service';
   styleUrls: ['./view-event.component.css']
 })
 export class ViewEventComponent implements OnInit {
-  events:any
-  currentUserid=localStorage.getItem('currentUserid')
+  events: any
+  currentUserid = localStorage.getItem('currentUserid')
 
-  constructor(private ds:DataService) { 
+  constructor(private ds: DataService) {
     this.ds.getEvent(this.currentUserid)
-    .subscribe((result:any)=>{
-      console.log(result);
-      this.events=result.event
-  },
-  result=>{
-    alert(result.error.message)
-  })
+      .subscribe((result: any) => {
+        console.log(result);
+        this.events = result.event
+      },
+        result => {
+          alert(result.error.message)
+        })
+
+
+
   }
 
   ngOnInit(): void {
   }
   
+  
+  
+  removeEvent(k:any){
+    this.ds.removeEvent(k)
+    .subscribe((result:any)=>{
+      if(result){
+        window.location.reload();
+
+      }
+    },
+    ( result:any)=>{
+      alert(result.error.message)
+    })
+  }
 }
+

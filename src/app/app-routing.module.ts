@@ -7,10 +7,10 @@ import { ViewEventComponent } from './view-event/view-event.component';
 
 
 const routes: Routes = [
-  {path:'',component:LoginComponent },
-  {path:'register',component:RegisterComponent},
-  {path:'dashboard',component:DashboardComponent},
-  {path:'view-event',component:ViewEventComponent}
+  { path: '', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'view-event', component: ViewEventComponent }
 ];
 
 @NgModule({

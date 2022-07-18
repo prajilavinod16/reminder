@@ -1,23 +1,20 @@
- .log1{
-    margin-top: 150px;
-    height: 300px;
-    align-items: center;
-}
-.form_class{
-    height: 400px;
-    width: 400px;
-}
- .login1{
-height: 800px;
-/* background-image: url(../../assets/EDU-Reminders-unfurl@2x.jpg); */
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-background-blend-mode: multiply;
-width: 100%;
-} 
+ .log1 {
+     margin-top: 150px;
+     height: 300px;
+     align-items: center;
+ }
 
+ .form_class {
+     height: 400px;
+     width: 400px;
+ }
 
-
-
-
+ .login1 {
+     height: 800px;
+     /* background-image: url(../../assets/EDU-Reminders-unfurl@2x.jpg); */
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     background-blend-mode: multiply;
+     width: 100%;
+ }

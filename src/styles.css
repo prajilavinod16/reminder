@@ -1,4 +1,5 @@
-html,body{
+html,
+body {
     background-image: url(../../reminderapp/src/assets/paper-3146952_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,4 +8,3 @@ html,body{
     height: 600px;
 
 }
-
